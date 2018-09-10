@@ -1,9 +1,9 @@
 from django.contrib import admin
 
-from mysite.register.models import Register,Phones,Products
+from register.models import Register,Phones,Categories
 # Register your models here.
 
-admin.site.mysite.register(Register)
-admin.site.mysite.register(Phones)
-admin.site.mysite.register(Products)
+admin.site.register(Register)
+admin.site.register(Phones)
+admin.site.register(Categories)
 
