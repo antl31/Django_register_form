@@ -1,8 +1,10 @@
-{% load staticfiles %}
+{% load static %}
 <html>
 <head>
 
     <title>Django</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/styles.css' %}">
+
 </head>
 <body>
     {% if errors %}
@@ -12,42 +14,41 @@
             {% endfor %}
         </ul>
     {% endif %}
+
         <h1> Registration Form</h1>
     <form action="" method="post">
         <p>
-            <label>username</label>
-        <input name="username" type="text" value="">
+            <label>Username:</label>
+            <input name="username" type="text" value="">
         </p>
 
         <p>
             <label>Email</label>
-        <input name="email" type="text" value="">
+            <input name="email" type="text" value="">
         </p>
+
         <p>
             <label>Password</label>
-        <input name="password" type="password" autocomplete="false" value="">
+            <input name="password" type="password" autocomplete="false" value="">
         </p>
+
         <p>
             <label>Name</label>
-        <input name="name" type="text" value="">
+            <input name="name" type="text" value="">
         </p>
+
         <p>
             <label>Surname</label>
-        <input name="surname" type="text" value="">
+            <input name="surname" type="text" value="">
         </p>
+
         <p>
             <label>Phone</label>
-        <input name="phone" type="text" value="">
-        </p>
-
-
-        <p>
-            <label>Е-mail</label>
-        <input name="email" type="text" value="">
+            <input name="phone" type="text" value="">
         </p>
 
         <p>
-            <input type="submit" value="Отправить">
+            <input class='button' type="submit" value="Отправить">
         </p>
         {% csrf_token %}
     </form>
