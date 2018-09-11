@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from register.models import Register, Phones, Categories
+from .models import Register, Phones, Categories
 # Register your models here.
 
 admin.site.register(Register)
