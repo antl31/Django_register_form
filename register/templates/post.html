@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <html>
 <head>
 
@@ -11,18 +12,43 @@
             {% endfor %}
         </ul>
     {% endif %}
-
+        <h1> Registration Form</h1>
     <form action="" method="post">
-        <label>Имя</label>
-        <input name="name" type="text" value="{{ form.name }}">
+        <p>
+            <label>username</label>
+        <input name="username" type="text" value="">
+        </p>
 
-        <label>Е-mail</label>
-        <input name="email" type="text" value="{{ form.email }}">
+        <p>
+            <label>Email</label>
+        <input name="email" type="text" value="">
+        </p>
+        <p>
+            <label>Password</label>
+        <input name="password" type="password" autocomplete="false" value="">
+        </p>
+        <p>
+            <label>Name</label>
+        <input name="name" type="text" value="">
+        </p>
+        <p>
+            <label>Surname</label>
+        <input name="surname" type="text" value="">
+        </p>
+        <p>
+            <label>Phone</label>
+        <input name="phone" type="text" value="">
+        </p>
 
-        <label>Сообщение</label>
-        <textarea name="message">{{ form.message }}</textarea>
 
-        <input type="submit" value="Отправить">
+        <p>
+            <label>Е-mail</label>
+        <input name="email" type="text" value="">
+        </p>
+
+        <p>
+            <input type="submit" value="Отправить">
+        </p>
         {% csrf_token %}
     </form>
 </body>
