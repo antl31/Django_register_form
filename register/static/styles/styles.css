@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+p {
+    display: flex;
+    width: 330px;
+    justify-content: space-between;
+}
+input {
+    height: 26px;
+    width: 220px;
+    border-color: #ddd;
+    color: #666;
+    font-size: 16px;
+    outline: none;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    text-align: center;
+    transition: 0.33s all;
+}
+input:focus {
+    border: #bbb solid 1px;
+    outline: none;
+}
+.button {
+    all: unset;
+    width: 160px;
+    height: 30px;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background-color: #ddd;
+    transition: 0.15s all;
+}
+.button:hover {
+    background-color: #aaa;
+}

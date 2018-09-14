@@ -1,0 +1,38 @@
+{% load static %}
+<html>
+<head>
+
+    <title>Check your Email</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/styles.css' %}">
+
+</head>
+<body>
+
+        <h1> Check your Email</h1>
+    <form action="" method="post">
+
+
+        <p>
+            <label>Email</label>
+            <input name="email" type="text" value="">
+        </p>
+
+       <p>
+            <input class='button' type="submit" value="Отправить">
+        </p>
+
+
+    <h2>Your account data</h2>
+    <table>
+        <tr><th>Name</th><th>Surname</th></tr>
+        {% for reg in regform %}
+        <tr><td>{{ reg.name }}</td><td>{{ reg.surname }}</td></tr>
+        {% endfor %}
+    </table>
+
+
+
+        {% csrf_token %}
+    </form>
+</body>
+</html>
