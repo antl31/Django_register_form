@@ -1,8 +1,8 @@
 # Marketplace project
 Django project with models:
-0. "Register" for user registration
-0. "Categories" contains information about market products.
-0. "Phones" as a category of products.
+* "Register" for user registration.
+* "Categories" contains information about market products.
+* "Phones" as a category of products.
 ***
 This project has 2 webpages:
 * Registration Form: ("/"),
