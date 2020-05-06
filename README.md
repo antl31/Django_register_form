@@ -8,9 +8,11 @@ This project has 2 webpages:
 * Registration Form: ("/"),
 * Check your email in DB: ("/get/").
 ***
-## Installation:
+## Installation (For Linux):
 * git clone https://github.com/antl31/Django_register_form
-* python -m venv venv
-* pip install -r requirements.txt
-* python manage.py migrate
-* python manage.py runserver
+* cd Django_register_form
+* python3 -m venv venv
+* source venv/bin/activate
+* pip3 install -r requirements.txt
+* python3 manage.py migrate
+* python3 manage.py runserver
