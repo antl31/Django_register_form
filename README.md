@@ -10,7 +10,7 @@ This project has 2 webpages:
 ***
 ## Installation (For Linux):
 * git clone https://github.com/antl31/Django_register_form
-* cd Django_register_form
+* cd Django_register_form/
 * python3 -m venv venv
 * source venv/bin/activate
 * pip3 install -r requirements.txt
