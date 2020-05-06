@@ -5,12 +5,12 @@ Django project with models:
 3."Phones" as a category of products.
 ***
 This project has 2 webpages:
-* "Main Page:("/"),
-* "Check your email in DB:("/get/").
+* Registration Form: ("/"),
+* Check your email in DB: ("/get/").
 ***
 ## Installation:
 * git clone https://github.com/antl31/Django_register_form
-* python3 -m venv venv
+* python -m venv venv
 * pip install -r requirements.txt
-* python3 manage.py migrate
-* python3 manage.py runserver
+* python manage.py migrate
+* python manage.py runserver

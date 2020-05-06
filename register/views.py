@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .form import RegisterForm, GetterForm
+from .forms import RegisterForm, GetterForm
 from .models import Register
 # Create your views here.
 

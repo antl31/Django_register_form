@@ -21,7 +21,7 @@ class Phones(models.Model):
     serial_number = models.CharField(max_length=20)
     description = models.TextField()
     price = models.FloatField(max_length=10)
-    quantity = models.IntegerField(max_length=10)
+    quantity = models.IntegerField()
 
     def __str__(self):
         return self.Brand
@@ -30,7 +30,7 @@ class Phones(models.Model):
 class Categories(models.Model):
     name = models.CharField(max_length=20)
     Brand = models.ForeignKey(Phones, to_field='Brand', on_delete=models.CASCADE)
-    quantity = models.IntegerField(max_length=20)
+    quantity = models.IntegerField()
     description = models.TextField(max_length=40)
 
     def __str__(self):
